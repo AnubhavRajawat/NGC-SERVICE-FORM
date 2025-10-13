@@ -103,6 +103,9 @@ const SERVICE_GUIDANCE = {
    Component
    --------------------------- */
 export default function NGCServiceFormEnhanced() {
+  React.useEffect(() => {
+    document.title = "Flintham Mackenzie | Professional Corporate Services";
+  }, []);
   const [form, setForm] = useState(clone(INITIAL_STATE));
   const [errors, setErrors] = useState({});
   const [submittedJson, setSubmittedJson] = useState(null);
@@ -331,7 +334,7 @@ export default function NGCServiceFormEnhanced() {
                       <Building2 className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h1 className="text-4xl font-bold tracking-tight">NGC & Associates LLP</h1>
+                      <h1 className="text-4xl font-bold tracking-tight">Flintham Mackenzie</h1>
                       <p className="text-white/90 text-lg mt-1">Professional Corporate Services</p>
                     </div>
                   </div>
@@ -359,7 +362,7 @@ export default function NGCServiceFormEnhanced() {
               <div className="bg-white rounded-2xl shadow-lg card p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--brand-orange)] to-[var(--brand-dark)] flex items-center justify-center text-white font-bold text-lg shadow-lg accent-badge">
-                    NG
+                    FM
                   </div>
                   <div>
                     <h3 className="font-bold text-brand-dark">Request Summary</h3>
@@ -694,7 +697,7 @@ export default function NGCServiceFormEnhanced() {
         </div>
 
         <footer className="mt-8 text-center text-sm text-gray-600">
-          <p>© 2025 NGC & Associates LLP. All rights reserved.</p>
+        <p>© 2025 Flintham Mackenzie Ltd. All rights reserved.</p>
           <p className="mt-1">Professional corporate services · Trusted by businesses nationwide</p>
         </footer>
 
